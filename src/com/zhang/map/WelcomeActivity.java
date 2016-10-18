@@ -1,4 +1,4 @@
-package com.zhang.map;
+﻿package com.zhang.map;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,6 +17,7 @@ import android.widget.ImageView;
 public class WelcomeActivity extends Activity {
 	/** Called when the activity is first created. */
 	int screenHeight,screenWidth;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
