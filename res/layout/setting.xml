@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:padding="10px"
+	  	android:gravity="center_horizontal"
+	  	android:text="设置"
+	  	android:textSize="25dip"
+	  />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:orientation="vertical" >
+ <LinearLayout
+		  android:id="@+id/layout121"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		  android:background="@drawable/glass">
+        <CheckBox
+            android:id="@+id/voiedstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:onClick="setVoiedStart"
+            android:textSize="20dip"
+            android:text="开启语音" />
+        <CheckBox
+            android:id="@+id/traffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:onClick="setTraffic"
+             android:textSize="20dip"
+            android:text="交通图" />
+         
+         <CheckBox
+            android:id="@+id/baiduHeatMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+             android:textSize="20dip"
+            android:onClick="setBaiduHeatMap"
+            android:text="城市热力图" />
+          
+         <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+             android:layout_marginTop="20sp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                 android:textSize="20dip"
+                android:onClick="setMapMode"
+                android:text="普通图" />
+
+            <RadioButton
+                android:id="@+id/statellite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:textSize="20dip"
+                android:onClick="setMapMode"
+                android:text="卫星图" />
+        </RadioGroup>
+         <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical" >
+            
+            <RadioButton
+                android:id="@+id/normalmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                 android:textSize="20dip"
+                android:onClick="setModeSeclet"
+                android:text="普通模式" />
+
+            <RadioButton
+                android:id="@+id/followmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:textSize="20dip"
+                android:onClick="setModeSeclet"
+                android:text="跟随模式" />
+            
+            <RadioButton
+                android:id="@+id/compassmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:textSize="20dip"
+                android:onClick="setModeSeclet"
+                android:text="罗盘模式" />
+        </RadioGroup>
+         </LinearLayout>  
+         
+    </LinearLayout>  
+<LinearLayout
+        android:id="@+id/layout_adview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+		android:layout_centerInParent="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+</LinearLayout>
